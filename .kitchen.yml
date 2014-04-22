@@ -1,0 +1,23 @@
+---
+driver_plugin: docker
+driver_config:
+  require_chef_omnibus: true
+
+platforms:
+- name: ubuntu
+  driver_config:
+    image: ubuntu:13.04
+- name: centos-6.4
+  driver_config:
+    image: centos:6.4
+
+suites:
+- name: default
+  run_list:
+    - recipe[chef]
+  attributes:
+    chef:
+      _FILE_CACHE_PATH: '/tmp/chef'
+      _COOKBOOK_PATH: ['/tmp/chef-repo/cookbooks', '/tmp/chef-repo/site-cookbooks']
+      _ROLE_PATH: '/tmp/chef-repo/roles'
+      _DATABAG_PATH: '/tmp/chef-repo/data_bags'

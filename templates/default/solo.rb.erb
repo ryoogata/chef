@@ -1,0 +1,4 @@
+file_cache_path "<%= node["chef"]["_FILE_CACHE_PATH"]%>"
+cookbook_path ["<%= node["chef"]["_COOKBOOK_PATH"].join('", "') %>"]
+role_path "<%= node["chef"]["_ROLE_PATH"]%>"
+data_bag_path "<%= node["chef"]["_DATABAG_PATH"]%>"
