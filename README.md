@@ -1,5 +1,7 @@
 chef Cookbook
 =============
+[![Build Status](https://travis-ci.org/ryoogata/chef.svg)](https://travis-ci.org/ryoogata/chef)
+
 TODO: Enter the cookbook description here.
 
 e.g.
