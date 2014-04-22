@@ -6,6 +6,11 @@ description      'Installs/Configures chef'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 
+# == Recipes
+#
+
+recipe "chef::default","setup chef env"
+
 # == Attributes
 #
 attribute "chef",
