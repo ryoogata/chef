@@ -18,6 +18,6 @@ suites:
   attributes:
     chef:
       _FILE_CACHE_PATH: '/tmp/chef'
-      _COOKBOOK_PATH: '/tmp/chef-repo/cookbooks, /tmp/chef-repo/site-cookbooks'
+      _COOKBOOK_PATH: ['/tmp/chef-repo/cookbooks', '/tmp/chef-repo/site-cookbooks']
       _ROLE_PATH: '/tmp/chef-repo/roles'
       _DATABAG_PATH: '/tmp/chef-repo/data_bags'
