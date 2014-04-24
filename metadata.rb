@@ -26,9 +26,9 @@ attribute "chef/_FILE_CACHE_PATH",
 
 attribute "chef/_COOKBOOK_PATH",
   :display_name => "",
-  :description =>
-    "",
-  :default => "['/vagrant/chef-repo/cookbooks', '/vagrant/chef-repo/site-cookbooks']",
+  :description => "",
+  :type => "array",
+  :default => "%w{/vagrant/chef-repo/cookbooks /vagrant/chef-repo/site-cookbooks}",
   :required => "optional",
   :recipes => ["chef::default"]
 
