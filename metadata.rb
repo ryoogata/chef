@@ -17,14 +17,12 @@ attribute "chef",
     :display_name => "General chef Options",
     :type => "hash"
 
-
 attribute "chef/_FILE_CACHE_PATH",
-  :display_name => "",
-  :description =>
-    "",
-  :default => "/tmp",
-  :required => "optional",
-  :recipes => ["chef::default"]
+ :display_name => "",
+ :description => "",
+ :default => "/tmp",
+ :required => "optional",
+ :recipes => ["chef::default"]
 
 attribute "chef/_COOKBOOK_PATH",
   :display_name => "",
@@ -36,16 +34,14 @@ attribute "chef/_COOKBOOK_PATH",
 
 attribute "chef/_ROLE_PATH",
   :display_name => "",
-  :description =>
-    "",
+  :description => "",
   :default => "/vagrant/chef-repo/roles",
   :required => "optional",
   :recipes => ["chef::default"]
 
 attribute "chef/_DATABAG_PATH",
   :display_name => "",
-  :description =>
-    "",
+  :description => "",
   :default => "/vagrant/chef-repo/data_bags",
   :required => "optional",
   :recipes => ["chef::default"]
