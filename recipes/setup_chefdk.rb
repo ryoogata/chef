@@ -30,7 +30,7 @@ end
     gem_package package_name do
       action :install
       gem_binary("/opt/chefdk/embedded/bin/gem")
-      options("--no-rdoc --no-ri --install-dir /opt/chefdk/embedded/lib/ruby/gems/2.1.0")
+      options("--no-rdoc --no-ri --no-user-install")
     end
 end
 
