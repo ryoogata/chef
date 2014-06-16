@@ -33,3 +33,12 @@ end
       options("--no-rdoc --no-ri")
     end
 end
+
+%w{
+  chef-zero ohai
+}.each do |link|
+    link "/usr/bin/#{link}" do
+      to "/opt/chef/bin/#{link}"
+    end
+  end
+end
