@@ -40,5 +40,4 @@ end
     link "/usr/bin/#{link}" do
       to "/opt/chef/bin/#{link}"
     end
-  end
 end
